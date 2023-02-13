@@ -2,7 +2,6 @@ import { TouchableOpacity, View, Alert } from "react-native"
 import BouncyCheckbox from "react-native-bouncy-checkbox"
 import { Trash } from "phosphor-react-native"
 import { styles } from "./styles"
-import { useState } from "react";
 
 interface ToDoItemProps {
     id: string
@@ -14,7 +13,6 @@ interface ToDoItemProps {
 
 export function ToDoItem( {id, isDone, description, onRemove, onChangeIsDone} : ToDoItemProps) {
     const { container, checkbox, icon } = styles
-    //const [isChecked, setIsChecked] = useState(isDone)
 
     function handleRemoveToDoItem(){
         Alert.alert("Remover", `Deseja realmente remover a tarefa: "${description}"?`, [
