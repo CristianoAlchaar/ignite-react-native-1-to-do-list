@@ -57,6 +57,21 @@ export function ToDoList() {
         setToDoList(toDoList.filter((item) => item.id !== id))
     }
 
+    function changeIsDone(id:string){
+        setToDoList((prevToDoList) => {
+            const updatedToDoList = prevToDoList.map((toDo) => {
+              if (toDo.id === id) {
+                return {
+                  ...toDo,
+                  isDone: !toDo.isDone,
+                };
+              }
+              return toDo;
+            });
+            return updatedToDoList;
+        });
+    }
+
     return( 
         <View style={container}>
             <View style={inputContainer}>
@@ -91,6 +106,7 @@ export function ToDoList() {
                         description={item.description} 
                         isDone={item.isDone} 
                         onRemove={removeToDoFromList}
+                        onChangeIsDone={changeIsDone}
                     />}
                 keyExtractor={item => item.id}
                 showsVerticalScrollIndicator={false}
