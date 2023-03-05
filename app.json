@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "01-to-do-list",
-    "slug": "01-to-do-list",
+    "slug": "to-do-list-react-native",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +28,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "33dfa3e3-b8c9-4a0b-ba33-875d7ee14cb4"
+      }
+    },
+    "owner": "crisalchaar"
   }
 }
