@@ -1,5 +1,7 @@
 # ignite-react-native-1-To-do
 
+This app is a mobile version of [@To Do List](https://github.com/CristianoAlchaar/ignite-reactjs-1-To-do). Its basically a to do list where user can insert tasks, mark them as done and remove tasks. 
+
 Project developed with __Expo__, __React Native__, __Typescript__
 
 ## How to run project
