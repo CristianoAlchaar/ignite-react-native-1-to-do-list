@@ -13,15 +13,8 @@ interface toDoItem{
     description: string;
 }
 
-const list: toDoItem[] = [
-    {id: '1', isDone: false, description: 'Comer batata'},
-    {id: '2', isDone: true, description: 'Lambar sabão'},
-    {id: '3', isDone: true, description: 'Estudar Programação'},
-    {id: '4', isDone: false, description: 'Varrer a casa'},
-]
-
 export function ToDoList() {
-    const [toDoList, setToDoList] = useState<toDoItem[]>(list)
+    const [toDoList, setToDoList] = useState<toDoItem[]>([])
     const [newToDo, setNewToDo] = useState('')
 
     const refInput = useRef<TextInput>(null)
